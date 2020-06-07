@@ -7,9 +7,9 @@ import frc.robot.subsystems.Drivetrain;
 
 public class ManualDriveCommand extends CommandBase {
     
-    Drivetrain drivetrain;
-    DoubleSupplier forwardSupplier;
-    DoubleSupplier turnSupplier;
+    private final Drivetrain drivetrain;
+    private final DoubleSupplier forwardSupplier;
+    private final DoubleSupplier turnSupplier;
 
     public ManualDriveCommand(Drivetrain drivetrain, DoubleSupplier forwardSupplier, DoubleSupplier turnSupplier) {
         this.drivetrain = drivetrain;
